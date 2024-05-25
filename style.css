@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.flex{
+  display:flex;
+  flex-direction:row;
+  padding:20px;
+}
+img{
+  width:300px;
+}
+.hide-bg{
+  mix-blend-mode: multiply;
+  filter: contrast(1);
+}
+ 
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Oswald', sans-serif;
+  background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+}
+ 
+.container {
+  padding: 1rem 1.5rem;
+  /*border: 1px solid black;*/
+  border-radius: 20px;
+  height: 400px;
+  width: 500px;
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+}
+@media only screen and (min-device-width :280px) and (max-device-width :480px){
+
+.container {
+  padding: 1rem 1.5rem;
+  /*border: 1px solid black;*/
+  border-radius: 20px;
+  height: 800px;
+  width: 1000px;
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+}
+}
+ 
+
+h2 {
+  text-align: center;
+  padding: 15px 0;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+
+label{
+  font-family: 'Slabo 27px', serif;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+ 
+ 
+.option {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px;
+}
+.result__container {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid black;
+  background-image: linear-gradient(225deg, #25b4f7 0%, #8827dd 50%, rgb(143, 197, 43) 100%);
+;
+  padding: 0 5px;
+}
+ 
+.result-container #result {
+  word-wrap: break-word;
+  max-width: calc(100% - 40px);
+}
+ 
+.result__container #copy {
+  height: 40px;
+  width: 50px;
+  background-color: #5FF813;
+  color: black;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+ 
+.result__container #copy:hover {
+  background-color: #1c2541;
+  color: #ffffff;
+}
+ 
+#generate {
+  margin-top: 20px;
+  text-align: center;
+  height: 45px;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  background-color: #0b132b;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+ 
+#generate:hover {
+  background: linear-gradient(90deg, #006eb8 0%, #00ff88 100%);
+  color: #ffffff;
+}
